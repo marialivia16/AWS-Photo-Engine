@@ -22,22 +22,22 @@ namespace PhotoEngine {
         protected global::System.Web.UI.WebControls.FileUpload fileUploader;
         
         /// <summary>
-        /// photoValidator control.
+        /// reqImageValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator photoValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqImageValidator;
         
         /// <summary>
-        /// btnPreview control.
+        /// formatValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPreview;
+        protected global::System.Web.UI.WebControls.CustomValidator formatValidator;
         
         /// <summary>
         /// panelPreview control.
