@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Photo Engine</h1>
+        <h1>Picturesque</h1>
     </div>
 
     <div class="row">
