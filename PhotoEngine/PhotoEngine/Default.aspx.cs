@@ -9,17 +9,18 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.Ajax.Utilities;
 
 namespace PhotoEngine
 {
     public partial class _Default : Page
     {
-        private const int C = 8;
-        private const double minPercent = 1.0;
+        private const int C = 16;
+        private const double minPercent = 3;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnPreview_OnClick(object sender, EventArgs e)
@@ -73,6 +74,10 @@ namespace PhotoEngine
             {
                 Debug.WriteLine("{0}, {1}%", entry.Key, entry.Value);
             }
+            
+            int id = ImageHash.H.Count;
+            ImageHash.H.Add(id, hash);
+            panelPreview.Visible = false;
         }
 
         protected void btnCancel_OnClick(object sender, EventArgs e)
